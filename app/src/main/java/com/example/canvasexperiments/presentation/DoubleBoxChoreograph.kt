@@ -3,7 +3,9 @@ package com.example.canvasexperiments.presentation
 import android.animation.ValueAnimator
 import android.view.animation.LinearInterpolator
 
-class DoubleBoxChoreograph(val topBox: SimpleBox, val bottomBox: SimpleBox, val midDistance: Float) {
+class DoubleBoxChoreograph(val topBox: SimpleBox, val bottomBox: SimpleBox) {
+
+    var midDistance: Int = 0
 
     private var ballParam = 0f
         set(param) {
